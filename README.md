@@ -1,10 +1,16 @@
 # Python
 Notes for Python
 
+Pre-Code
+    
+    Attributes of Python
+        - Python is an interactive language, which means we don't actually have to compile it. 
+        - Python is white space based, which means we don't need semi-colons as compared to C, instead, we just need the appropriate white space or indentation levels for each line of code. 
+        - Python is dyanmic - this means that our variables don't need to be initialised as a certain data type. e.g, Instead of initialising x by using "int x = 5", we can just do "x = 5". As such, WE CAN CHANGE THE TYPE OF VALUE HELD BY VARIABLES. For example, in C, if we declare int x = 5, this means we can't then assign "Hello" as the value of x. On the other hand, in Python, we can have x = 5, then declare, later on, that x = "Hello". 
 
 Mathematics
 
-    It should be noted that in python, assigning a string to a variable does not require brackets. 
+    It should be noted that in python, assigning a string to a variable does not require brackets. #C doesn't need this either does it? It's only for printing as far as I recall...
     Floats
     
         Floats are automatically recognised when we put decimal points after the number, or even just a decimal point at the end.
@@ -42,6 +48,11 @@ Printing
         To concatenate strings, integers etc, we can use the following notation:
         
             print "String" + str(integer) + ...
+            
+    Printing with commas
+        In the previous printing method, each string or integer would've been printed with no spaces in between. If you want gaps between them, use the following print method (ie, just put commas in between):
+        
+        print "string", "string", "str.."
 
 Strings
     Introduction
@@ -401,6 +412,8 @@ Lists
         Using the sort fuction will cause a list to be arranged in alphabetical order or increasing
         value.
         
+        #What's the actual call for this though? 
+        
         
     Dictionary
         A dictionary is similar to a list, but values are accessed by finding a
@@ -453,6 +466,8 @@ Lists
             
 
 For loops
+    
+    For loops in Python are slightly different to what we've previously seen in C. For loops in Python simply iterate over all the items, or elements in some iterable sequence. For example, a list is comprised of a sequence of indexes, which are iterable, while dictionaries are comprised of a sequence of keys.  
     
     For loops - dictionaries/lists
         For loops can be used to iterate over all the items in a list through
@@ -697,5 +712,42 @@ Note: Print statements will always print a number in integer form unless you spe
         
         
 Objects
+    
+    Objects are essentially #things? in Python which contain both data and functions. The data and function of objects are called the attributes and methods respectively. 
+    
+    Objects in Python are declared in the following manner:
 
+        class [object_name](object):
+        
+            def __init__(self, [other_argument_1], [other_argument_2]):
+            
+                self.attribute_1 = other_argument_1
+                self.attribute_1 = other_argument_2
+                etc. 
+                
+            #Note that init is really just a method to "boot up" or initialise the object.
+            
+            def method1(self, [other_argument_1]...):
+            
+            
+                #Block of Code
+                
+                
+           
+           
+     Access
+     To access an object's attributes or methods, we use the "." operator as such:
+
+            object.attribute_1
+            
+            and for the method
+            
+            object.method1([other_argument_1])
+            
+            #note how we don't actually need to pass in self again when calling the object method. 
+            
+            
+            
+            
+            
     The properties of objects can in fact be manipulated or changed after their initialisation. 
